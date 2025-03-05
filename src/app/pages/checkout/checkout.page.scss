@@ -1,0 +1,61 @@
+/* Fondo general */
+ion-content {
+    --background: #f4f4f4; /* Color de fondo suave */
+  }
+  
+  /* Estilo de la tarjeta de formulario */
+  form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  /* Estilo de los inputs */
+  ion-item {
+    --border-radius: 8px;
+    --padding-start: 12px;
+    --inner-padding-end: 12px;
+    margin-bottom: 12px;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Placeholder de los inputs */
+  ion-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Botón de pago */
+  app-button {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  /* Efecto hover en el botón */
+  app-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Mejoras en el botón de regreso */
+  ion-back-button {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Centrar el formulario */
+  .ion-padding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  

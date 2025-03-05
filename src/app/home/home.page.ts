@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+  import { Component, OnInit } from '@angular/core';
+  import { CartService } from '../shared/services/localstorage/cart.service';
+  
 
 @Component({
   selector: 'app-home',
@@ -6,8 +8,22 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
   standalone: false,
 })
-export class HomePage {
+export class HomePage implements OnInit{
 
-  constructor() {}
+  isLoading: boolean = true;
+  categorySelected: string = '';
+  sortOrder: string = 'price-asc'
+  cartItemCount: number = 0;
 
+  constructor(private readonly cartS: CartService) {}
+
+  ngOnInit() {
+    
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 3000);
+    this.cartS.getCartItemCount().subscribe(count => {
+      this.cartItemCount = count;
+    });
+  }
 }

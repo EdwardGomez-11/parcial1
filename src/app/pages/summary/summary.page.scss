@@ -1,0 +1,82 @@
+/* Fondo general */
+ion-content {
+    --background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  
+  ion-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+  
+  
+  ion-card-header {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px 12px 0 0;
+  }
+  
+
+  ion-card-content {
+    padding: 15px;
+  }
+  
+  /* Estilo para los detalles del cliente */
+  p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Lista de productos */
+  ion-list {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  /* Estilo de cada producto */
+  ion-item {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  /* Imagen del producto */
+  ion-thumbnail img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Texto dentro de la lista */
+  ion-label h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  ion-label p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Botón de regreso */
+  ion-back-button {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
